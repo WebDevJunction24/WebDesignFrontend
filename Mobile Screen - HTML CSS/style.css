@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #e6e6fa;
+    display: flex;
+}
+
+.mobileScreen {
+    width: 375px;
+    height: 550px;
+    background-color: #fff;
+    border-radius: 36px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin: auto;
+}
+
+.mobileHead {
+    width: 100%;
+    height: 60px;
+    background-color: #f0f0f0;
+    border-top-left-radius: 36px;
+    border-top-right-radius: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 36px 36px 0 0;
+
+}
+
+.mobileHead img.profileIcon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profileName {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-left: 10px;
+}
+
+.headerIcons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.contactIcon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.iconOne {
+    width: 28px;
+    height: 28px;
+}
+
+.mobileChat {
+    padding: 20px;
+    display: grid;
+    gap: 12px;
+    height: 390px;
+    overflow-y: scroll;
+}
+
+.chatLeft {
+    padding: 10px;
+    max-width: 190px;
+    width: fit-content;
+    border-radius: 12px;
+    background-color: #e3e3e3;
+}
+
+.chatRight {
+    padding: 10px;
+    max-width: 190px;
+    border-radius: 12px;
+    background-color: #c7c6c6;
+    display: flex;
+    justify-self: flex-end;
+}
+
+.mobileFooter {
+    width: 100%;
+    height: 60px;
+    background-color: #f0f0f0;
+    border-bottom-left-radius: 36px;
+    border-bottom-right-radius: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.mobileFooter .attachIcon,
+.shareIcon {
+    width: 25px;
+    height: 25px;
+    margin: 0 14px;
+    cursor: pointer;
+}
+
+.messageInput {
+    height: 30px;
+    width: 230px;
+    border-radius: 12px;
+    padding: 3px;
+    border: 2px solid #e3e3e3;
+}
+
+.messageInput:focus {
+    outline: none;
+    border-color: #a3a3a3;
+}
+
+@media screen and (max-width: 768px) {
+    .mobileScreen {
+        width: 320px;
+    }
+}

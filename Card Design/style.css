@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E6E6FA;
+}
+
+.card {
+    display: flex;
+    max-width: 800px;
+    width: 100%;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 100px;
+}
+
+.cardImage {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+    background-size: cover;
+}
+
+.cardImage img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+}
+
+.cardDesc {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    font-family: "Inter", sans-serif;
+}
+
+.cardDesc h2 {
+    font-size: 24px;
+    color: #6A0DAD;
+}
+
+.btn {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+}
+
+.btn .addBtn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 16px;
+    background-color: #DDB6F9;
+    cursor: pointer;
+}
+
+.btn .addBtn:first-child {
+    background-color: #6A0DADed;
+    color: white;
+}
+
+@media only screen and (max-width: 992px) {
+    .card {
+        flex-direction: column;
+        height: auto;
+        width: 350px;
+        height: 400px;
+        margin: 50px;
+    }
+
+    .cardImage {
+        width: 100%;
+        height: 200px;
+    }
+
+    .cardImage img {
+        border-radius: 20px 20px 0 0;
+    }
+
+    .cardDesc {
+        padding: 14px;
+        gap: 16px;
+    }
+
+    .btn {
+        flex-direction: row;
+        max-width: 300px;
+        width: 100%;
+        margin-top: 0px !important;
+    }
+
+    .btn .addBtn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .btn .addBtn {
+        width: 100%;
+        text-align: center;
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+}

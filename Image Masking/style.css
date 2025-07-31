@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #E6E6FA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+  width: 512px;
+  height: 512px;
+}
+
+.background, .foreground {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.foreground {
+  mix-blend-mode: screen;
+  opacity: 1;
+}

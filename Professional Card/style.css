@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "JetBrains Mono", monospace;
+    background-color: #E6E6FA;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    height: 400px;
+    width: 60%;
+    border-radius: 12px;
+    background-image: linear-gradient(140deg, #B116DB 0%, #763A86 50%, #A20888 75%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.box60 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+    gap: 10px;
+    color: rgb(231, 231, 231);
+}
+
+.details h2,
+.details p:nth-child(2) {
+    text-align: center;
+}
+
+.details p:nth-child(2) {
+    font-weight: 600;
+    margin-top: 6px;
+}
+
+.details p:nth-child(3) {
+    margin-top: 20px;
+    font-weight: 300;
+}
+
+.contact {
+    margin-top: 20px;
+    display: flex;
+    gap: 24px;
+}
+
+.contact img {
+    width: 28px;
+    height: auto;
+}
+
+.box40 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+    gap: 10px;
+}
+
+.box40 img {
+    width: 50%;
+}
+
+@media Screen and (max-width: 1100px) {
+    .details p:nth-child(3) {
+        font-size: 14px;
+    }
+
+    .details p:nth-child(2) {
+        font-size: 16px;
+    }
+
+    .details h2 {
+        font-size: 18px;
+    }
+}
+
+@media Screen and (max-width: 900px) {
+    .card{
+        flex-direction: column;
+    }
+
+    .child1{
+        order: 2;
+    }
+    .child2{
+        order: 1;
+    }
+    .box60{
+        width: 100%;
+    }
+    .card{
+        gap: 20px;
+    }
+    .details h2{
+        font-size: 20px;
+    }
+}
+
+@media Screen and (max-width: 600px){
+
+    .details h2{
+        font-size: 18px;
+    }
+    .details p:nth-child(2){
+        font-size: 14px;
+    }
+    .details p:nth-child(3){
+        font-size: 12px;
+    }
+    .contact img{
+        width: 20px;
+        height: auto;
+    }
+    .contact{
+        margin-top: 10px;
+    }
+    .details p:nth-child(3){
+        margin-top: 10px;
+    }
+}

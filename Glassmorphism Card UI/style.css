@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+
+body {
+    /* background: linear-gradient(135deg, #74ebd5, #9face6); */
+    background-image: url("image/bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    font-family: "Radio Canada Big", sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    padding: 2rem;
+    width: 300px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    text-align: center;
+}
+
+.cardImage img {
+    width: 100px;
+    height: auto;
+}
+
+.name {
+    margin: 12px;
+}
+
+.name h2,
+.name p {
+    margin: 0px 0 6px 0;
+}
+
+.desc {
+    margin-top: 10px;
+}
+
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons button {
+    width: 110px;
+    border-radius: 14px;
+    padding: 10px 12px;
+    border: none;
+    background: rgb(255 249 249 / 10%);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    cursor: pointer;
+}
+
+.buttons button:nth-child(2) {
+    background-color: rgb(36, 35, 35);
+    color: white;
+}

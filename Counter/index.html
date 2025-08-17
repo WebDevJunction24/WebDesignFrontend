@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 300px;
+        }
+
+        .btn {
+            color: black;
+            font-size: 40px;
+            border-radius: 12px;
+            height: 94px;
+            width: 94px;
+            border: none;
+        }
+
+        .para {
+            height: 50px;
+            background: lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            border-radius: 12px;
+            margin: 10px;
+            margin-bottom: 0px;
+            color: black;
+            font-size: 18px;
+        }
+
+        .reset {
+            margin: 10px;
+            width: 200px;
+            height: 50px;
+            border-radius: 12px;
+            border: navajowhite;
+            background-color: lightcoral;
+            color: black;
+        }
+
+        .btn-box {
+            width: max-content;
+            display: flex;
+            gap: 10px;
+            margin: 10px;
+            margin-bottom: 0px;
+        }
+
+        .add {
+            background-color: lightgreen;
+        }
+
+        .sub {
+            background-color: indianred;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="para">0</div>
+    <div class="btn-box">
+        <button class="add btn">+</button>
+        <button class="sub btn">-</button>
+    </div>
+    <button class="reset">Reset</button>
+    <script src="script.js"></script>
+</body>
+
+</html>
